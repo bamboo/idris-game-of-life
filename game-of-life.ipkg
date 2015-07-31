@@ -1,0 +1,6 @@
+package GameOfLife
+
+sourcedir = src
+main =   Main
+executable = igol
+opts = "-p contrib"
