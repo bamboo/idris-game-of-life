@@ -48,6 +48,7 @@ instance Eq Cells where
 -- Any live cell with two or three live neighbours lives on to the next generation.
 -- Any live cell with more than three live neighbours dies, as if by overcrowding.
 -- Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
+-- https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life#Rules
 neighbours : Cell -> List Cell
 neighbours (x, y) = [(x,     y - 1), (x,     y + 1),
                      (x - 1, y - 1), (x + 1, y - 1),
